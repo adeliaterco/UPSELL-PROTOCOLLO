@@ -22,7 +22,7 @@ const IMAGES = {
   ataqueCelulasZumbisDentro: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
 
   // Seção: Se você está apresentando esses sintomas
-  celulasSenescentes: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
+  celulasSenescentes: "https://i.ibb.co/MkQZ8Z1R/94ee6615abe3b5144ee00558e3764e-1764218058684.png",
 
   // Seção: Por que os tratamentos "padrão" não apenas falham
   pesquisaNasaDensidadeOssea: "https://i.ibb.co/MkQZ8Z1R/94ee6615abe3b5144ee00558e3764e-1764218058684.png",
