@@ -235,7 +235,7 @@ export default function ProtocoloAntiCelulasZumbis() {
               />
             </div>
             <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
-              Células senescentes atacando a estrutura óssea. Ilustração: Pesquisa NASA
+              Células senescentes atacando a estrutura óssea.
             </figcaption>
           </figure>
 
