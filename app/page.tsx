@@ -16,7 +16,7 @@ const IMAGES = {
   heroMainImage: "https://ibb.co/VpmZZKqd", // ← Mulher 50+ ativa e feliz
   
   // ELON MUSK
-  elonMuskPhoto: "/images/elon-musk.jpg", // ← Foto oficial do Elon Musk
+  elonMuskPhoto: "https://ibb.co/Qv3LpDkz", // ← Foto oficial do Elon Musk
   
   // CIENTÍFICAS
   zombieCellsIllustration: "/images/zombie-cells.jpg", // ← Ilustração células senescentes
