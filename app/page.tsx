@@ -13,7 +13,7 @@ import Image from "next/image"
 // ============================================
 const IMAGES = {
   // HERO SECTION
-  heroMainImage: "https://ibb.co/VpmZZKqd", // ← Mulher 50+ ativa e feliz
+  heroMainImage: "https://img.freepik.com/fotos-gratis/jovem-barbudo-com-camisa-listrada_273609-5677.jpg?semt=ais_hybrid&w=740&q=80", // ← Mulher 50+ ativa e feliz
   
   // ELON MUSK
   elonMuskPhoto: "https://ibb.co/Qv3LpDkz", // ← Foto oficial do Elon Musk
