@@ -205,19 +205,6 @@ export default function ProtocoloAntiCelulasZumbis() {
 
           <figure className="my-6 sm:my-8">
             <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
-              <Image 
-                src={IMAGES.zombieCellsIllustration}
-                alt="Ilustração de células senescentes"
-                fill
-                className="object-contain sm:object-cover"
-                unoptimized
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
-              />
-            </div>
-            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
-              Células senescentes (em vermelho) liberam substâncias inflamatórias que destroem ossos e cartilagens. Ilustração: Pesquisa NASA
-            </figcaption>
-          </figure>
 
           <p>
             <strong>As "células zumbis" são células senescentes que se recusam a morrer,</strong> mas, em vez disso, permanecem no corpo, inundando os tecidos circundantes com substâncias químicas inflamatórias que corroem a estrutura óssea, destroem a cartilagem e aceleram a dor e a rigidez nas articulações.
@@ -239,6 +226,20 @@ export default function ProtocoloAntiCelulasZumbis() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             "Seus ossos não estão apenas fracos — eles estão sendo atacados de dentro para fora"
           </h2>
+
+               <Image 
+                src={IMAGES.zombieCellsIllustration}
+                alt="Ilustração de células senescentes"
+                fill
+                className="object-contain sm:object-cover"
+                unoptimized
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
+              />
+            </div>
+            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
+              Células senescentes (em vermelho) liberam substâncias inflamatórias que destroem ossos e cartilagens. Ilustração: Pesquisa NASA
+            </figcaption>
+          </figure>
 
           <p>
             No interior do seu corpo, milhões de células estão se tornando rebeldes — transformando-se no que os cientistas agora chamam de "células zumbis".
