@@ -39,7 +39,7 @@ const IMAGES = {
   testimonialDiane: "https://i.ibb.co/NgBbNN2B/3-DEPOIMENTO.png",
 
   // Autoridade médica
-  draMarina: "https://i.ibb.co/W4VVcZky/unnamed-2.png",
+  draMarina: "https://i.ibb.co/k2XRy3S3/Generatedimage-1764255762791.png",
 }
 
 const CHECKOUT_URL = "https://pay.hotmart.com/P103120932I?off=r5yaffdw"
