@@ -12,27 +12,22 @@ import Image from "next/image"
 // 🖼️ CONFIGURAÇÃO DE IMAGENS - TROQUE AQUI!
 // ============================================
 const IMAGES = {
-  // HERO SECTION
-  heroMainImage: "https://img.freepik.com/fotos-gratis/jovem-barbudo-com-camisa-listrada_273609-5677.jpg?semt=ais_hybrid&w=740&q=80", // ← Mulher 50+ ativa e feliz
+  // 🔴 ATENÇÃO: Use os links DIRETOS do ImgBB (que começam com https://i.ibb.co/)
+  // Formato correto: https://i.ibb.co/CODIGO/arquivo.jpg
   
-  // ELON MUSK
-  elonMuskPhoto: "https://ibb.co/Qv3LpDkz", // ← Foto oficial do Elon Musk
+  // SUAS 2 IMAGENS (obtenha os links diretos corretos):
+  heroMainImage: "https://i.ibb.co/VpmZZKq/imagem.jpg", // ← CORRIJA: Cole o link DIRETO aqui
+  elonMuskPhoto: "https://i.ibb.co/Qv3LpDk/elon.jpg",   // ← CORRIJA: Cole o link DIRETO aqui
   
-  // CIENTÍFICAS
-  zombieCellsIllustration: "/images/zombie-cells.jpg", // ← Ilustração células senescentes
-  boneXray: "/images/bone-xray-comparison.jpg", // ← Raio-X ossos antes/depois
-  nasaResearch: "/images/nasa-research.jpg", // ← Pesquisa NASA/astronautas
-  
-  // PRODUTO
-  productPackage: "/images/protocol-package.jpg", // ← Embalagem do protocolo
-  
-  // DEPOIMENTOS
-  testimonialHelen: "/images/testimonial-helen.jpg", // ← Helen, 68 anos
-  testimonialRuth: "/images/testimonial-ruth.jpg", // ← Ruth, 64 anos
-  testimonialDiane: "/images/testimonial-diane.jpg", // ← Diane, 66 anos
-  
-  // AUTORIDADE MÉDICA
-  draMarina: "/images/dra-marina-santos.jpg", // ← Dra. Marina Santos
+  // Todas as outras imagens usarão as mesmas 2 acima (você pediu para repetir):
+  zombieCellsIllustration: "https://i.ibb.co/VpmZZKq/imagem.jpg", // ← Repetindo imagem 1
+  boneXray: "https://i.ibb.co/Qv3LpDk/elon.jpg",                  // ← Repetindo imagem 2
+  nasaResearch: "https://i.ibb.co/VpmZZKq/imagem.jpg",            // ← Repetindo imagem 1
+  productPackage: "https://i.ibb.co/Qv3LpDk/elon.jpg",            // ← Repetindo imagem 2
+  testimonialHelen: "https://i.ibb.co/VpmZZKq/imagem.jpg",        // ← Repetindo imagem 1
+  testimonialRuth: "https://i.ibb.co/Qv3LpDk/elon.jpg",           // ← Repetindo imagem 2
+  testimonialDiane: "https://i.ibb.co/VpmZZKq/imagem.jpg",        // ← Repetindo imagem 1
+  draMarina: "https://i.ibb.co/Qv3LpDk/elon.jpg",                 // ← Repetindo imagem 2
 }
 
 // ============================================
@@ -136,13 +131,14 @@ export default function ProtocoloAntiCelulasZumbis() {
 
         {/* IMAGEM HERO */}
         <figure className="mb-10">
-          <div className="relative w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden">
+          <div className="relative w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden bg-gray-200">
             <Image 
               src={IMAGES.heroMainImage}
               alt="Mulher ativa com mais de 50 anos"
               fill
               className="object-cover"
               priority
+              unoptimized
             />
           </div>
           <figcaption className="text-sm text-gray-500 mt-3 italic">
@@ -207,12 +203,13 @@ export default function ProtocoloAntiCelulasZumbis() {
           </h2>
 
           <figure className="my-8">
-            <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
+            <div className="relative w-full h-[400px] rounded-lg overflow-hidden bg-gray-200">
               <Image 
                 src={IMAGES.elonMuskPhoto}
                 alt="Elon Musk"
                 fill
                 className="object-cover"
+                unoptimized
               />
             </div>
             <figcaption className="text-sm text-gray-500 mt-3 italic">
@@ -247,12 +244,13 @@ export default function ProtocoloAntiCelulasZumbis() {
           </h2>
 
           <figure className="my-8">
-            <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
+            <div className="relative w-full h-[400px] rounded-lg overflow-hidden bg-gray-200">
               <Image 
                 src={IMAGES.zombieCellsIllustration}
                 alt="Ilustração de células senescentes"
                 fill
                 className="object-cover"
+                unoptimized
               />
             </div>
             <figcaption className="text-sm text-gray-500 mt-3 italic">
@@ -516,12 +514,13 @@ export default function ProtocoloAntiCelulasZumbis() {
           </p>
 
           <figure className="my-10">
-            <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
+            <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg bg-gray-200">
               <Image 
                 src={IMAGES.productPackage}
                 alt="Protocolo de Regeneração Óssea Anti-Células Zumbis"
                 fill
                 className="object-cover"
+                unoptimized
               />
             </div>
             <figcaption className="text-sm text-gray-500 mt-3 italic text-center">
@@ -671,7 +670,15 @@ export default function ProtocoloAntiCelulasZumbis() {
           {/* Depoimento 1 */}
           <div className="border-l-4 border-blue-600 pl-6 py-6 my-8 bg-gray-50 rounded-r-lg">
             <div className="flex items-center mb-4">
-              <div className="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+              <div className="w-16 h-16 bg-gray-300 rounded-full mr-4 overflow-hidden relative">
+                <Image 
+                  src={IMAGES.testimonialHelen}
+                  alt="Helena"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
               <div>
                 <p className="font-bold text-lg">Helena, 68 anos</p>
                 <div className="flex">
@@ -695,7 +702,15 @@ export default function ProtocoloAntiCelulasZumbis() {
           {/* Depoimento 2 */}
           <div className="border-l-4 border-green-600 pl-6 py-6 my-8 bg-gray-50 rounded-r-lg">
             <div className="flex items-center mb-4">
-              <div className="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+              <div className="w-16 h-16 bg-gray-300 rounded-full mr-4 overflow-hidden relative">
+                <Image 
+                  src={IMAGES.testimonialRuth}
+                  alt="Ruth"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
               <div>
                 <p className="font-bold text-lg">Ruth, 64 anos</p>
                 <div className="flex">
@@ -719,7 +734,15 @@ export default function ProtocoloAntiCelulasZumbis() {
           {/* Depoimento 3 */}
           <div className="border-l-4 border-purple-600 pl-6 py-6 my-8 bg-gray-50 rounded-r-lg">
             <div className="flex items-center mb-4">
-              <div className="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+              <div className="w-16 h-16 bg-gray-300 rounded-full mr-4 overflow-hidden relative">
+                <Image 
+                  src={IMAGES.testimonialDiane}
+                  alt="Diane"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
               <div>
                 <p className="font-bold text-lg">Diane, 66 anos</p>
                 <div className="flex">
@@ -750,7 +773,15 @@ export default function ProtocoloAntiCelulasZumbis() {
             </h3>
             
             <div className="flex flex-col md:flex-row items-center gap-6">
-              <div className="w-24 h-24 bg-gray-300 rounded-full flex-shrink-0"></div>
+              <div className="w-24 h-24 bg-gray-300 rounded-full flex-shrink-0 overflow-hidden relative">
+                <Image 
+                  src={IMAGES.draMarina}
+                  alt="Dra. Marina Santos"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
               <div>
                 <p className="text-xl text-gray-800 mb-4 italic">
                   "Analisei inúmeros protocolos para densidade óssea e o <strong>Protocolo Anti-Células Zumbis é único.</strong> Se você sofre de perda óssea ou desconforto articular, recomendo este protocolo."
