@@ -63,33 +63,6 @@ export default function ProtocoloAntiCelulasZumbis() {
 
   return (
     <main className="min-h-screen bg-white">
-      
-      {/* ============================================ */}
-      {/* HEADER ESTILO JORNAL */}
-      {/* ============================================ */}
-      
-      <header className="border-b-2 border-gray-200 bg-white sticky top-0 z-50 shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>
-                Saúde & Ciência
-              </h1>
-              <p className="text-xs text-gray-500">Descobertas Médicas</p>
-            </div>
-            <div className="text-right">
-              <p className="text-xs text-gray-500">
-                {new Date().toLocaleDateString('pt-PT', { 
-                  weekday: 'long', 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
-                })}
-              </p>
-            </div>
-          </div>
-        </div>
-      </header>
 
       {/* ============================================ */}
       {/* ARTIGO PRINCIPAL */}
