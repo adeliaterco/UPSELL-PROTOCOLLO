@@ -13,7 +13,7 @@ import Image from "next/image"
 // ============================================
 const IMAGES = {
   // HERO SECTION
-  heroMainImage: "/images/hero-woman-active.jpg", // ← Mulher 50+ ativa e feliz
+  heroMainImage: "https://ibb.co/VpmZZKqd", // ← Mulher 50+ ativa e feliz
   
   // ELON MUSK
   elonMuskPhoto: "/images/elon-musk.jpg", // ← Foto oficial do Elon Musk
