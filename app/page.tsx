@@ -9,18 +9,36 @@ import { ArrowRight, Clock, CheckCircle, Shield, AlertTriangle, Award, Heart, Tr
 import Image from "next/image"
 
 // ============================================
-// 🖼️ CONFIGURAÇÃO DE IMAGENS - TROQUE AQUI!
+// 🖼️ CONFIGURAÇÃO DE IMAGENS - RENOMEADAS POR TÍTULO
 // ============================================
 const IMAGES = {
-  heroMainImage: "https://i.ibb.co/x8H0047y/5c4fa786e4bf6b95eae2720de5a6f7-1764217967139.png",
-  elonMuskPhoto: "https://i.ibb.co/PGvKFDM3/7028b3efd3bc7cae736f2bead2d857-1764218051919.jpg",
-  zombieCellsIllustration: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
-  boneXray: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
-  nasaResearch: "https://i.ibb.co/MkQZ8Z1R/94ee6615abe3b5144ee00558e3764e-1764218058684.png",
-  productPackage: "https://i.ibb.co/Qv3LpDk/elon.jpg",
+  // HERO - Imagem principal do artigo
+  mulherAtiva50Anos: "https://i.ibb.co/x8H0047y/5c4fa786e4bf6b95eae2720de5a6f7-1764217967139.png",
+
+  // Seção: A descoberta revolucionária de Elon Musk
+  elonMuskFoto: "https://i.ibb.co/PGvKFDM3/7028b3efd3bc7cae736f2bead2d857-1764218051919.jpg",
+
+  // Seção: Seus ossos não estão apenas fracos — eles estão sendo atacados de dentro para fora
+  ataqueCelulasZumbisDentro: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
+
+  // Seção: Se você está apresentando esses sintomas
+  celulasSenescentes: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
+
+  // Seção: Por que os tratamentos "padrão" não apenas falham
+  pesquisaNasaDensidadeOssea: "https://i.ibb.co/MkQZ8Z1R/94ee6615abe3b5144ee00558e3764e-1764218058684.png",
+
+  // Seção: Se você ainda não está acamada
+  raioXOssoSaudavel: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
+
+  // Seção: O protocolo revolucionário
+  protocoloAntiCelulasZumbis: "https://i.ibb.co/Qv3LpDk/elon.jpg",
+
+  // Depoimentos
   testimonialHelen: "https://i.ibb.co/VpmZZKq/imagem.jpg",
   testimonialRuth: "https://i.ibb.co/Qv3LpDk/elon.jpg",
   testimonialDiane: "https://i.ibb.co/VpmZZKq/imagem.jpg",
+
+  // Autoridade médica
   draMarina: "https://i.ibb.co/Qv3LpDk/elon.jpg",
 }
 
@@ -71,7 +89,7 @@ export default function ProtocoloAntiCelulasZumbis() {
         <figure className="mb-6 sm:mb-10">
           <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] rounded-lg overflow-hidden bg-gray-200">
             <Image 
-              src={IMAGES.heroMainImage}
+              src={IMAGES.mulherAtiva50Anos}
               alt="Mulher ativa com mais de 50 anos"
               fill
               className="object-contain sm:object-cover"
@@ -139,7 +157,7 @@ export default function ProtocoloAntiCelulasZumbis() {
           <figure className="my-6 sm:my-8">
             <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
               <Image 
-                src={IMAGES.elonMuskPhoto}
+                src={IMAGES.elonMuskFoto}
                 alt="Elon Musk"
                 fill
                 className="object-contain sm:object-cover"
@@ -196,6 +214,22 @@ export default function ProtocoloAntiCelulasZumbis() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             "Seus ossos não estão apenas fracos — eles estão sendo atacados de dentro para fora"
           </h2>
+
+          <figure className="my-6 sm:my-8">
+            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
+              <Image 
+                src={IMAGES.ataqueCelulasZumbisDentro}
+                alt="Ataque de células zumbis"
+                fill
+                className="object-contain sm:object-cover"
+                unoptimized
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
+              />
+            </div>
+            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
+              Células senescentes atacando a estrutura óssea. Ilustração: Pesquisa NASA
+            </figcaption>
+          </figure>
 
           <p>
             No interior do seu corpo, milhões de células estão se tornando rebeldes — transformando-se no que os cientistas agora chamam de "células zumbis".
@@ -256,8 +290,8 @@ export default function ProtocoloAntiCelulasZumbis() {
           <figure className="my-6 sm:my-8">
             <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
               <Image 
-                src={IMAGES.zombieCellsIllustration}
-                alt="Ilustração de células senescentes"
+                src={IMAGES.celulasSenescentes}
+                alt="Células senescentes"
                 fill
                 className="object-contain sm:object-cover"
                 unoptimized
@@ -339,8 +373,8 @@ export default function ProtocoloAntiCelulasZumbis() {
           <figure className="my-6 sm:my-8">
             <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
               <Image 
-                src={IMAGES.nasaResearch}
-                alt="Pesquisa NASA sobre perda óssea"
+                src={IMAGES.pesquisaNasaDensidadeOssea}
+                alt="Pesquisa NASA sobre densidade óssea"
                 fill
                 className="object-contain sm:object-cover"
                 unoptimized
@@ -388,8 +422,8 @@ export default function ProtocoloAntiCelulasZumbis() {
           <figure className="my-6 sm:my-8">
             <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
               <Image 
-                src={IMAGES.boneXray}
-                alt="Raio X de ossos saudáveis"
+                src={IMAGES.raioXOssoSaudavel}
+                alt="Raio X de osso saudável"
                 fill
                 className="object-contain sm:object-cover"
                 unoptimized
@@ -478,7 +512,7 @@ export default function ProtocoloAntiCelulasZumbis() {
           <figure className="my-8 sm:my-10">
             <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden shadow-lg bg-gray-200">
               <Image 
-                src={IMAGES.productPackage}
+                src={IMAGES.protocoloAntiCelulasZumbis}
                 alt="Protocolo de Regeneração Óssea Anti-Células Zumbis"
                 fill
                 className="object-contain sm:object-cover"
@@ -496,7 +530,7 @@ export default function ProtocoloAntiCelulasZumbis() {
           </h2>
 
           <p className="mb-4 sm:mb-6">
-            Este potent <strong>sistema de dupla ação</strong> contém técnicas clinicamente comprovadas, desenvolvidas para:
+            Este potente <strong>sistema de dupla ação</strong> contém técnicas clinicamente comprovadas, desenvolvidas para:
           </p>
 
           <div className="bg-blue-50 rounded-lg p-6 sm:p-8 my-6 sm:my-8">
