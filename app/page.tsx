@@ -386,9 +386,6 @@ export default function ProtocoloAntiCelulasZumbis() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
               />
             </div>
-            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
-              Pesquisa da NASA sobre mecanismos de perda óssea. Foto: Arquivo
-            </figcaption>
           </figure>
 
           <div className="space-y-4 sm:space-y-6 my-6 sm:my-8">
@@ -525,9 +522,6 @@ export default function ProtocoloAntiCelulasZumbis() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
               />
             </div>
-            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic text-center px-2 sm:px-0">
-              Protocolo desenvolvido com base nas pesquisas de Elon Musk e NASA. Foto: Divulgação
-            </figcaption>
           </figure>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6 break-words">
