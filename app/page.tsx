@@ -33,13 +33,21 @@ const IMAGES = {
   // Seção: O protocolo revolucionário
   protocoloAntiCelulasZumbis: "https://i.ibb.co/Jwm1FtHw/unnamed-1.png",
 
-  // Depoimentos
-  testimonialHelen: "https://i.ibb.co/sd9w8QWj/1-DEPOIMENTO.webp",
-  testimonialRuth: "https://i.ibb.co/TqPrr9rg/2fc1e47b2931f00666611ff2960c9c3f.jpg",
-  testimonialDiane: "https://i.ibb.co/NgBbNN2B/3-DEPOIMENTO.png",
-
   // Autoridade médica
   draMarina: "https://i.ibb.co/k2XRy3S3/Generatedimage-1764255762791.png",
+
+  // NOVAS IMAGENS ADICIONADAS
+  // Após depoimento Diane
+  esperancaRenovada: "https://i.ibb.co/x8H0047y/5c4fa786e4bf6b95eae2720de5a6f7-1764217967139.png",
+
+  // Abaixo de "O que acontece se você não fizer nada?"
+  consequenciasInacao: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
+
+  // Abaixo de "Garantia de 30 dias, sem perguntas"
+  garantiaSeguranca: "https://i.ibb.co/k2XRy3S3/Generatedimage-1764255762791.png",
+
+  // Substituindo countdown
+  agiAgora: "https://i.ibb.co/CpswnrYz/unnamed.png",
 }
 
 const CHECKOUT_URL = "https://pay.hotmart.com/P103120932I?off=r5yaffdw"
@@ -663,15 +671,6 @@ export default function ProtocoloAntiCelulasZumbis() {
 
           <div className="border-l-4 border-blue-600 pl-4 sm:pl-6 py-4 sm:py-6 my-6 sm:my-8 bg-gray-50 rounded-r-lg">
             <div className="flex items-center mb-3 sm:mb-4">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-300 rounded-full mr-3 sm:mr-4 overflow-hidden relative flex-shrink-0">
-                <Image 
-                  src={IMAGES.testimonialHelen}
-                  alt="Helena"
-                  fill
-                  className="object-contain sm:object-cover"
-                  unoptimized
-                />
-              </div>
               <div>
                 <p className="font-bold text-base sm:text-lg">Helena, 68 anos</p>
                 <div className="flex">
@@ -694,15 +693,6 @@ export default function ProtocoloAntiCelulasZumbis() {
 
           <div className="border-l-4 border-green-600 pl-4 sm:pl-6 py-4 sm:py-6 my-6 sm:my-8 bg-gray-50 rounded-r-lg">
             <div className="flex items-center mb-3 sm:mb-4">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-300 rounded-full mr-3 sm:mr-4 overflow-hidden relative flex-shrink-0">
-                <Image 
-                  src={IMAGES.testimonialRuth}
-                  alt="Ruth"
-                  fill
-                  className="object-contain sm:object-cover"
-                  unoptimized
-                />
-              </div>
               <div>
                 <p className="font-bold text-base sm:text-lg">Ruth, 64 anos</p>
                 <div className="flex">
@@ -725,15 +715,6 @@ export default function ProtocoloAntiCelulasZumbis() {
 
           <div className="border-l-4 border-purple-600 pl-4 sm:pl-6 py-4 sm:py-6 my-6 sm:my-8 bg-gray-50 rounded-r-lg">
             <div className="flex items-center mb-3 sm:mb-4">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-300 rounded-full mr-3 sm:mr-4 overflow-hidden relative flex-shrink-0">
-                <Image 
-                  src={IMAGES.testimonialDiane}
-                  alt="Diane"
-                  fill
-                  className="object-contain sm:object-cover"
-                  unoptimized
-                />
-              </div>
               <div>
                 <p className="font-bold text-base sm:text-lg">Diane, 66 anos</p>
                 <div className="flex">
@@ -756,6 +737,23 @@ export default function ProtocoloAntiCelulasZumbis() {
               "Não uso mais almofada térmica. Pela primeira vez em muito tempo, sinto que há esperança novamente."
             </p>
           </div>
+
+          {/* NOVA IMAGEM 1: Esperança Renovada */}
+          <figure className="my-6 sm:my-8 w-full">
+            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
+              <Image 
+                src={IMAGES.esperancaRenovada}
+                alt="Esperança renovada - Mulher ativa recuperando qualidade de vida"
+                fill
+                className="object-contain sm:object-cover"
+                unoptimized
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
+              />
+            </div>
+            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
+              Mulheres recuperando mobilidade e confiança através do protocolo. Foto: Divulgação
+            </figcaption>
+          </figure>
 
           <div className="bg-blue-50 rounded-lg p-6 sm:p-8 my-8 sm:my-10">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 text-center break-words">
@@ -787,6 +785,23 @@ export default function ProtocoloAntiCelulasZumbis() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6 break-words">
             O que acontece se você não fizer nada?
           </h2>
+
+          {/* NOVA IMAGEM 2: Consequências da Inação */}
+          <figure className="my-6 sm:my-8 w-full">
+            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
+              <Image 
+                src={IMAGES.consequenciasInacao}
+                alt="Consequências da inação - Deterioração óssea progressiva"
+                fill
+                className="object-contain sm:object-cover"
+                unoptimized
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
+              />
+            </div>
+            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
+              Progressão da deterioração óssea quando não tratada adequadamente. Ilustração: Pesquisa Científica
+            </figcaption>
+          </figure>
 
           <p className="text-lg sm:text-xl mb-4 sm:mb-6 break-words">
             O que hoje parece <strong>"apenas uma pequena dor"...</strong> pode se transformar em uma <strong className="text-red-700">fratura que mudará sua vida amanhã.</strong>
@@ -893,6 +908,23 @@ export default function ProtocoloAntiCelulasZumbis() {
             Garantia de 30 dias, sem perguntas
           </h2>
 
+          {/* NOVA IMAGEM 3: Garantia e Segurança */}
+          <figure className="my-6 sm:my-8 w-full">
+            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
+              <Image 
+                src={IMAGES.garantiaSeguranca}
+                alt="Garantia de segurança e satisfação"
+                fill
+                className="object-contain sm:object-cover"
+                unoptimized
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
+              />
+            </div>
+            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
+              Proteção total com garantia incondicional de satisfação. Foto: Divulgação
+            </figcaption>
+          </figure>
+
           <div className="bg-green-50 rounded-lg p-6 sm:p-8 my-8 sm:my-10">
             <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
               <Shield className="w-20 h-20 sm:w-32 sm:h-32 text-green-600 flex-shrink-0" />
@@ -943,33 +975,22 @@ export default function ProtocoloAntiCelulasZumbis() {
               Se você está interessada em reconstruir seus ossos e recuperar sua independência, <strong className="text-red-700">agora é a hora de agir.</strong>
             </p>
 
-            <div className="bg-white rounded-lg p-4 sm:p-6 mb-6 sm:mb-8 max-w-sm sm:max-w-md mx-auto">
-              <div className="text-center mb-3 sm:mb-4">
-                <p className="font-bold text-red-700 mb-2 text-sm sm:text-base">⏰ OFERTA EXPIRA EM:</p>
+            {/* NOVA IMAGEM 4: Substituindo Countdown */}
+            <figure className="my-6 sm:my-8 w-full">
+              <div className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] rounded-lg overflow-hidden bg-gray-200">
+                <Image 
+                  src={IMAGES.agiAgora}
+                  alt="Hora de agir - Não perca esta oportunidade"
+                  fill
+                  className="object-contain sm:object-cover"
+                  unoptimized
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
+                />
               </div>
-              <div className="flex justify-center gap-2 sm:gap-4">
-                <div className="text-center">
-                  <div className="bg-red-600 text-white text-2xl sm:text-3xl md:text-4xl font-bold py-2 sm:py-3 px-2 sm:px-4 rounded-lg mb-1">
-                    {String(timeLeft.hours).padStart(2, '0')}
-                  </div>
-                  <div className="text-xs font-bold text-red-700">HORAS</div>
-                </div>
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold flex items-center">:</div>
-                <div className="text-center">
-                  <div className="bg-red-600 text-white text-2xl sm:text-3xl md:text-4xl font-bold py-2 sm:py-3 px-2 sm:px-4 rounded-lg mb-1">
-                    {String(timeLeft.minutes).padStart(2, '0')}
-                  </div>
-                  <div className="text-xs font-bold text-red-700">MINUTOS</div>
-                </div>
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold flex items-center">:</div>
-                <div className="text-center">
-                  <div className="bg-red-600 text-white text-2xl sm:text-3xl md:text-4xl font-bold py-2 sm:py-3 px-2 sm:px-4 rounded-lg mb-1">
-                    {String(timeLeft.seconds).padStart(2, '0')}
-                  </div>
-                  <div className="text-xs font-bold text-red-700">SEGUNDOS</div>
-                </div>
-              </div>
-            </div>
+              <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
+                O momento certo para reconstruir sua saúde óssea é agora. Foto: Divulgação
+              </figcaption>
+            </figure>
 
             <div className="text-center">
               <Button 
