@@ -20,7 +20,7 @@ const IMAGES = {
   elonMuskPhoto: "https://i.ibb.co/PGvKFDM3/7028b3efd3bc7cae736f2bead2d857-1764218051919.jpg",   // ← CORRIJA: Cole o link DIRETO aqui
   
   // Todas as outras imagens usarão as mesmas 2 acima (você pediu para repetir):
-  zombieCellsIllustration: "https://i.ibb.co/VpmZZKq/imagem.jpg", // ← Repetindo imagem 1
+  zombieCellsIllustration: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg", // ← Repetindo imagem 1
   boneXray: "https://i.ibb.co/Qv3LpDk/elon.jpg",                  // ← Repetindo imagem 2
   nasaResearch: "https://i.ibb.co/VpmZZKq/imagem.jpg",            // ← Repetindo imagem 1
   productPackage: "https://i.ibb.co/Qv3LpDk/elon.jpg",            // ← Repetindo imagem 2
