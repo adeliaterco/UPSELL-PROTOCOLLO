@@ -12,33 +12,23 @@ import Image from "next/image"
 // 🖼️ CONFIGURAÇÃO DE IMAGENS - TROQUE AQUI!
 // ============================================
 const IMAGES = {
-  // 🔴 ATENÇÃO: Use os links DIRETOS do ImgBB (que começam com https://i.ibb.co/)
-  // Formato correto: https://i.ibb.co/CODIGO/arquivo.jpg
-  
-  // SUAS 2 IMAGENS (obtenha os links diretos corretos):
-  heroMainImage: "https://i.ibb.co/x8H0047y/5c4fa786e4bf6b95eae2720de5a6f7-1764217967139.png", // ← CORRIJA: Cole o link DIRETO aqui
-  elonMuskPhoto: "https://i.ibb.co/PGvKFDM3/7028b3efd3bc7cae736f2bead2d857-1764218051919.jpg",   // ← CORRIJA: Cole o link DIRETO aqui
-  
-  // Todas as outras imagens usarão as mesmas 2 acima (você pediu para repetir):
-  zombieCellsIllustration: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg", // ← Repetindo imagem 1
-  boneXray: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",                  // ← Repetindo imagem 2
-  nasaResearch: "https://i.ibb.co/MkQZ8Z1R/94ee6615abe3b5144ee00558e3764e-1764218058684.png",            // ← Repetindo imagem 1
-  productPackage: "https://i.ibb.co/Qv3LpDk/elon.jpg",            // ← Repetindo imagem 2
-  testimonialHelen: "https://i.ibb.co/VpmZZKq/imagem.jpg",        // ← Repetindo imagem 1
-  testimonialRuth: "https://i.ibb.co/Qv3LpDk/elon.jpg",           // ← Repetindo imagem 2
-  testimonialDiane: "https://i.ibb.co/VpmZZKq/imagem.jpg",        // ← Repetindo imagem 1
-  draMarina: "https://i.ibb.co/Qv3LpDk/elon.jpg",                 // ← Repetindo imagem 2
+  heroMainImage: "https://i.ibb.co/x8H0047y/5c4fa786e4bf6b95eae2720de5a6f7-1764217967139.png",
+  elonMuskPhoto: "https://i.ibb.co/PGvKFDM3/7028b3efd3bc7cae736f2bead2d857-1764218051919.jpg",
+  zombieCellsIllustration: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
+  boneXray: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
+  nasaResearch: "https://i.ibb.co/MkQZ8Z1R/94ee6615abe3b5144ee00558e3764e-1764218058684.png",
+  productPackage: "https://i.ibb.co/Qv3LpDk/elon.jpg",
+  testimonialHelen: "https://i.ibb.co/VpmZZKq/imagem.jpg",
+  testimonialRuth: "https://i.ibb.co/Qv3LpDk/elon.jpg",
+  testimonialDiane: "https://i.ibb.co/VpmZZKq/imagem.jpg",
+  draMarina: "https://i.ibb.co/Qv3LpDk/elon.jpg",
 }
 
-// ============================================
-// 🔗 CONFIGURAÇÃO DE CHECKOUT
-// ============================================
 const CHECKOUT_URL = "https://pay.hotmart.com/P103120932I?off=r5yaffdw"
 
 export default function ProtocoloAntiCelulasZumbis() {
   const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 47, seconds: 32 })
 
-  // Timer de contagem regressiva
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(prev => {
@@ -56,38 +46,28 @@ export default function ProtocoloAntiCelulasZumbis() {
     return () => clearInterval(timer)
   }, [])
 
-  // CTA - Redirecionamento DIRETO ao checkout
   const handleCTA = () => {
     window.location.href = CHECKOUT_URL
   }
 
   return (
     <main className="min-h-screen bg-white">
-
-      {/* ============================================ */}
-      {/* ARTIGO PRINCIPAL */}
-      {/* ============================================ */}
-      
       <article className="max-w-4xl mx-auto px-3 sm:px-4 py-6 sm:py-12">
         
-        {/* CATEGORIA */}
         <div className="mb-4 sm:mb-6">
           <Badge className="bg-red-600 text-white px-3 sm:px-4 py-1 text-xs font-bold uppercase">
             Saúde • Investigação Científica
           </Badge>
         </div>
 
-        {/* HEADLINE PRINCIPAL */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6" style={{ fontFamily: 'Georgia, serif' }}>
           Elon Musk: O único protocolo que todos os adultos com mais de 50 anos devem seguir para reconstruir a densidade óssea naturalmente
         </h1>
 
-        {/* SUBTÍTULO */}
         <p className="text-lg sm:text-xl md:text-2xl text-gray-600 leading-relaxed mb-6 sm:mb-8" style={{ fontFamily: 'Georgia, serif' }}>
           Descoberta revolucionária ligada à NASA revela como "células zumbis" destroem ossos e articulações — e como eliminá-las naturalmente
         </p>
 
-        {/* IMAGEM HERO - MOBILE OPTIMIZED */}
         <figure className="mb-6 sm:mb-10">
           <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] rounded-lg overflow-hidden bg-gray-200">
             <Image 
@@ -105,17 +85,14 @@ export default function ProtocoloAntiCelulasZumbis() {
           </figcaption>
         </figure>
 
-        {/* LEAD/LIDE */}
         <div className="text-base sm:text-lg leading-relaxed text-gray-800 mb-6 sm:mb-8" style={{ fontFamily: 'Georgia, serif' }}>
           <p className="mb-4 sm:mb-6">
             <span className="font-bold text-xl sm:text-2xl float-left mr-2 leading-none">O</span>s primeiros sinais de deterioração óssea e articular são fáceis de passar despercebidos. Com muita frequência, os médicos ignoram os sinais de alerta, com consequências devastadoras; <strong>todos os meses, cerca de 1.100 pessoas morrem após fraturarem o quadril devido à baixa densidade óssea.</strong>
           </p>
         </div>
 
-        {/* CORPO DO ARTIGO */}
         <div className="article-body text-base sm:text-lg leading-relaxed text-gray-800 space-y-4 sm:space-y-6" style={{ fontFamily: 'Georgia, serif' }}>
           
-          {/* Seção 1: História Pessoal */}
           <div className="bg-gray-50 border-l-4 border-red-600 pl-4 sm:pl-6 py-4 sm:py-6 my-6 sm:my-8 rounded-r-lg">
             <p className="mb-3 sm:mb-4">
               Na verdade, assisti horrorizada enquanto minha mãe morria lentamente de osteoporose.
@@ -139,7 +116,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             Na verdade, estudos clínicos mostram agora que milhões de mulheres com mais de 50 anos estão sofrendo perda óssea e de cartilagem acelerada, não simplesmente por causa do envelhecimento, mas devido a uma <strong>invasão celular oculta</strong> que silenciosamente sabota seus ossos e articulações por dentro.
           </p>
 
-          {/* PULL QUOTE */}
           <blockquote className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 text-center py-6 sm:py-8 my-6 sm:my-8 border-y-2 border-gray-300 px-4">
             "Então, por que algumas mulheres permanecem fortes, ativas e sem dor até os 70 anos, enquanto outras começam a se deteriorar aos 50 — mesmo seguindo as recomendações médicas?"
           </blockquote>
@@ -156,7 +132,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             E o que ele descobriu... mudou tudo.
           </p>
 
-          {/* Seção 2: Descoberta de Elon Musk */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             A descoberta revolucionária de Elon Musk — e a verdade alarmante sobre a perda óssea
           </h2>
@@ -198,13 +173,9 @@ export default function ProtocoloAntiCelulasZumbis() {
             E no cerne desse problema está um grupo perturbador de células disfuncionais — agora conhecidas como <strong className="text-red-600">"células zumbis".</strong>
           </p>
 
-          {/* Seção 3: Células Zumbis */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             O que são "células zumbis" — e por que estão destruindo seus ossos
           </h2>
-
-          <figure className="my-6 sm:my-8">
-            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
 
           <p>
             <strong>As "células zumbis" são células senescentes que se recusam a morrer,</strong> mas, em vez disso, permanecem no corpo, inundando os tecidos circundantes com substâncias químicas inflamatórias que corroem a estrutura óssea, destroem a cartilagem e aceleram a dor e a rigidez nas articulações.
@@ -222,24 +193,9 @@ export default function ProtocoloAntiCelulasZumbis() {
             Desde 2020, o acúmulo de células zumbis tornou-se uma epidemia invisível em mulheres idosas, roubando silenciosamente sua força, mobilidade e independência dia após dia.
           </p>
 
-          {/* Seção 4: Como funciona o ataque */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             "Seus ossos não estão apenas fracos — eles estão sendo atacados de dentro para fora"
           </h2>
-
-               <Image 
-                src={IMAGES.zombieCellsIllustration}
-                alt="Ilustração de células senescentes"
-                fill
-                className="object-contain sm:object-cover"
-                unoptimized
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
-              />
-            </div>
-            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
-              Células senescentes (em vermelho) liberam substâncias inflamatórias que destroem ossos e cartilagens. Ilustração: Pesquisa NASA
-            </figcaption>
-          </figure>
 
           <p>
             No interior do seu corpo, milhões de células estão se tornando rebeldes — transformando-se no que os cientistas agora chamam de "células zumbis".
@@ -293,10 +249,25 @@ export default function ProtocoloAntiCelulasZumbis() {
             Seu esqueleto está se desfazendo — pedaço por pedaço.
           </p>
 
-          {/* Seção 5: Sintomas de Alerta */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             Se você está apresentando esses sintomas, seus ossos e articulações podem já estar comprometidos
           </h2>
+
+          <figure className="my-6 sm:my-8">
+            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
+              <Image 
+                src={IMAGES.zombieCellsIllustration}
+                alt="Ilustração de células senescentes"
+                fill
+                className="object-contain sm:object-cover"
+                unoptimized
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
+              />
+            </div>
+            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
+              Células senescentes (em vermelho) liberam substâncias inflamatórias que destroem ossos e cartilagens. Ilustração: Pesquisa NASA
+            </figcaption>
+          </figure>
 
           <div className="bg-red-50 rounded-lg p-6 sm:p-8 my-6 sm:my-8">
             <p className="mb-4 sm:mb-6 text-sm sm:text-base">
@@ -361,10 +332,25 @@ export default function ProtocoloAntiCelulasZumbis() {
             </p>
           </div>
 
-          {/* Seção 6: Falha dos Tratamentos Convencionais */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             Por que os tratamentos "padrão" não apenas falham, como também pioram a situação
           </h2>
+
+          <figure className="my-6 sm:my-8">
+            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
+              <Image 
+                src={IMAGES.nasaResearch}
+                alt="Pesquisa NASA sobre perda óssea"
+                fill
+                className="object-contain sm:object-cover"
+                unoptimized
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
+              />
+            </div>
+            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
+              Pesquisa da NASA sobre mecanismos de perda óssea. Foto: Arquivo
+            </figcaption>
+          </figure>
 
           <div className="space-y-4 sm:space-y-6 my-6 sm:my-8">
             <div className="border-l-4 border-gray-300 pl-4 sm:pl-6">
@@ -395,10 +381,25 @@ export default function ProtocoloAntiCelulasZumbis() {
             </div>
           </div>
 
-          {/* Seção 7: Urgência Emocional */}
           <blockquote className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900 text-center py-6 sm:py-8 my-8 sm:my-10 bg-blue-50 rounded-lg px-4 sm:px-6">
             "Se você ainda não está acamada, seu corpo ainda está implorando por cura."
           </blockquote>
+
+          <figure className="my-6 sm:my-8">
+            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-lg overflow-hidden bg-gray-200">
+              <Image 
+                src={IMAGES.boneXray}
+                alt="Raio X de ossos saudáveis"
+                fill
+                className="object-contain sm:object-cover"
+                unoptimized
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
+              />
+            </div>
+            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
+              Estrutura óssea: a diferença entre ossos saudáveis e fracos. Foto: Divulgação
+            </figcaption>
+          </figure>
 
           <p>
             O que você está sentindo agora não é apenas dor.
@@ -443,7 +444,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </ul>
           </div>
 
-          {/* Seção 8: A Solução */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             O protocolo revolucionário que ajuda os ossos a se regenerarem e as articulações a se revitalizarem
           </h2>
@@ -491,13 +491,12 @@ export default function ProtocoloAntiCelulasZumbis() {
             </figcaption>
           </figure>
 
-          {/* Seção 9: Como funciona o protocolo */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             Como o Protocolo Anti-Células Zumbis atua em nível celular
           </h2>
 
           <p className="mb-4 sm:mb-6">
-            Este potente <strong>sistema de dupla ação</strong> contém técnicas clinicamente comprovadas, desenvolvidas para:
+            Este potent <strong>sistema de dupla ação</strong> contém técnicas clinicamente comprovadas, desenvolvidas para:
           </p>
 
           <div className="bg-blue-50 rounded-lg p-6 sm:p-8 my-6 sm:my-8">
@@ -569,7 +568,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </li>
           </ul>
 
-          {/* Seção 10: Como Aplicar */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             Como aplicar o Protocolo Anti-Células Zumbis para alívio máximo
           </h2>
@@ -625,12 +623,10 @@ export default function ProtocoloAntiCelulasZumbis() {
             </p>
           </div>
 
-          {/* Seção 11: Depoimentos */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             O que as pessoas estão dizendo sobre o Protocolo
           </h2>
 
-          {/* Depoimento 1 */}
           <div className="border-l-4 border-blue-600 pl-4 sm:pl-6 py-4 sm:py-6 my-6 sm:my-8 bg-gray-50 rounded-r-lg">
             <div className="flex items-center mb-3 sm:mb-4">
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-300 rounded-full mr-3 sm:mr-4 overflow-hidden relative flex-shrink-0">
@@ -662,7 +658,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </p>
           </div>
 
-          {/* Depoimento 2 */}
           <div className="border-l-4 border-green-600 pl-4 sm:pl-6 py-4 sm:py-6 my-6 sm:my-8 bg-gray-50 rounded-r-lg">
             <div className="flex items-center mb-3 sm:mb-4">
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-300 rounded-full mr-3 sm:mr-4 overflow-hidden relative flex-shrink-0">
@@ -694,7 +689,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </p>
           </div>
 
-          {/* Depoimento 3 */}
           <div className="border-l-4 border-purple-600 pl-4 sm:pl-6 py-4 sm:py-6 my-6 sm:my-8 bg-gray-50 rounded-r-lg">
             <div className="flex items-center mb-3 sm:mb-4">
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-300 rounded-full mr-3 sm:mr-4 overflow-hidden relative flex-shrink-0">
@@ -729,7 +723,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </p>
           </div>
 
-          {/* Seção 12: Autoridade Médica */}
           <div className="bg-blue-50 rounded-lg p-6 sm:p-8 my-8 sm:my-10">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">
               O que a comunidade médica tem a dizer
@@ -757,7 +750,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </div>
           </div>
 
-          {/* Seção 13: Consequências de não agir */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             O que acontece se você não fizer nada?
           </h2>
@@ -794,7 +786,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             A diferença entre recuperar suas forças... e perdê-las para sempre... tudo se resume ao que você faz agora.
           </p>
 
-          {/* Seção 14: Exclusividade */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             Por que você não encontrará o Protocolo em livrarias ou farmácias
           </h2>
@@ -813,7 +804,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </p>
           </div>
 
-          {/* Seção 15: Preço */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6 text-center">
             E agora vem a melhor parte
           </h2>
@@ -849,7 +839,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </div>
           </div>
 
-          {/* CTA PRINCIPAL */}
           <div className="my-8 sm:my-12 text-center">
             <Button 
               onClick={handleCTA}
@@ -865,7 +854,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </p>
           </div>
 
-          {/* Seção 16: Garantia */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6 text-center">
             Garantia de 30 dias, sem perguntas
           </h2>
@@ -904,7 +892,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </div>
           </div>
 
-          {/* Seção 17: Urgência */}
           <div className="bg-red-50 border-2 border-red-400 rounded-lg p-6 sm:p-8 my-8 sm:my-10">
             <div className="text-center mb-4 sm:mb-6">
               <AlertTriangle className="w-12 h-12 sm:w-16 sm:h-16 text-red-600 mx-auto mb-3 sm:mb-4" />
@@ -921,7 +908,6 @@ export default function ProtocoloAntiCelulasZumbis() {
               Se você está interessada em reconstruir seus ossos e recuperar sua independência, <strong className="text-red-700">agora é a hora de agir.</strong>
             </p>
 
-            {/* Timer */}
             <div className="bg-white rounded-lg p-4 sm:p-6 mb-6 sm:mb-8 max-w-sm sm:max-w-md mx-auto">
               <div className="text-center mb-3 sm:mb-4">
                 <p className="font-bold text-red-700 mb-2 text-sm sm:text-base">⏰ OFERTA EXPIRA EM:</p>
@@ -960,7 +946,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </div>
           </div>
 
-          {/* Seção 18: Escolha Binária */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6 text-center">
             O verdadeiro risco? Viver com dor e arrependimento.
           </h2>
@@ -968,8 +953,6 @@ export default function ProtocoloAntiCelulasZumbis() {
           <p className="text-lg sm:text-xl text-center mb-6 sm:mb-8">Você tem duas opções:</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 my-8 sm:my-10">
-            
-            {/* Opção 1 */}
             <div className="bg-red-50 border-2 border-red-400 rounded-lg p-6 sm:p-8">
               <div className="text-center mb-4 sm:mb-6">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
@@ -997,7 +980,6 @@ export default function ProtocoloAntiCelulasZumbis() {
               </ul>
             </div>
 
-            {/* Opção 2 */}
             <div className="bg-green-50 border-2 border-green-600 rounded-lg p-6 sm:p-8">
               <div className="text-center mb-4 sm:mb-6">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
@@ -1044,7 +1026,6 @@ export default function ProtocoloAntiCelulasZumbis() {
             </p>
           </div>
 
-          {/* CTA FINAL */}
           <div className="my-8 sm:my-12 text-center bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-6 sm:p-10">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
               Esta pode ser a decisão que divide sua vida em "antes" e "depois"
@@ -1074,13 +1055,11 @@ export default function ProtocoloAntiCelulasZumbis() {
             </p>
           </div>
 
-          {/* FAQ */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mt-8 sm:mt-12 mb-4 sm:mb-6">
             Perguntas Frequentes
           </h2>
 
           <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
-            
             <AccordionItem value="item-1" className="bg-gray-50 border border-gray-200 rounded-lg px-4 sm:px-6">
               <AccordionTrigger className="text-gray-900 hover:text-blue-700 font-bold text-sm sm:text-base">
                 O Protocolo funciona para todos?
@@ -1134,19 +1113,13 @@ export default function ProtocoloAntiCelulasZumbis() {
                 Não! O Protocolo se concentra em técnicas naturais, exposição solar estratégica, combinações alimentares específicas e protocolos baseados em alimentos comuns. Não exige suplementos caros ou difíceis de encontrar.
               </AccordionContent>
             </AccordionItem>
-
           </Accordion>
 
         </div>
       </article>
 
-      {/* ============================================ */}
-      {/* FOOTER / DISCLAIMER */}
-      {/* ============================================ */}
-      
       <footer className="bg-gray-100 border-t-2 border-gray-300 py-8 sm:py-12 px-3 sm:px-4">
         <div className="max-w-4xl mx-auto">
-          
           <div className="bg-yellow-100 border border-yellow-400 rounded-lg p-4 sm:p-6 mb-6 sm:mb-8">
             <p className="text-yellow-800 font-bold text-center mb-2 text-sm sm:text-base">
               ⚠️ IMPORTANTE - AVISO LEGAL
@@ -1167,31 +1140,25 @@ export default function ProtocoloAntiCelulasZumbis() {
               Este site não faz parte do site Facebook ou Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de forma alguma. FACEBOOK é uma marca registada da FACEBOOK, Inc.
             </p>
           </div>
-
         </div>
       </footer>
 
-      {/* CSS CUSTOMIZADO */}
       <style jsx global>{`
-        /* Fonte editorial */
         .article-body {
           font-family: Georgia, 'Times New Roman', serif;
         }
         
-        /* Espaçamento de parágrafos */
         .article-body p {
           margin-bottom: 1.5rem;
           line-height: 1.8;
         }
         
-        /* Headings estilo jornal */
         .article-body h2,
         .article-body h3 {
           font-family: Georgia, serif;
           line-height: 1.2;
         }
         
-        /* Letras capitulares (drop cap) - apenas para telas maiores */
         @media (min-width: 640px) {
           .article-body p:first-of-type::first-letter {
             font-size: 3.5rem;
@@ -1202,7 +1169,6 @@ export default function ProtocoloAntiCelulasZumbis() {
           }
         }
         
-        /* Links estilo editorial */
         .article-body a {
           color: #2563eb;
           text-decoration: underline;
@@ -1212,13 +1178,11 @@ export default function ProtocoloAntiCelulasZumbis() {
           color: #1d4ed8;
         }
         
-        /* Blockquotes estilo jornal */
         .article-body blockquote {
           font-style: italic;
           position: relative;
         }
         
-        /* Animação suave */
         .animate-pulse {
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
@@ -1232,7 +1196,6 @@ export default function ProtocoloAntiCelulasZumbis() {
           }
         }
 
-        /* Otimizações mobile para imagens */
         @media (max-width: 640px) {
           .object-contain {
             object-fit: contain !important;
