@@ -31,15 +31,15 @@ const IMAGES = {
   raioXOssoSaudavel: "https://i.ibb.co/CpswnrYz/unnamed.png",
 
   // Seção: O protocolo revolucionário
-  protocoloAntiCelulasZumbis: "https://i.ibb.co/Qv3LpDk/elon.jpg",
+  protocoloAntiCelulasZumbis: "https://i.ibb.co/Jwm1FtHw/unnamed-1.png",
 
   // Depoimentos
-  testimonialHelen: "https://i.ibb.co/VpmZZKq/imagem.jpg",
-  testimonialRuth: "https://i.ibb.co/Qv3LpDk/elon.jpg",
-  testimonialDiane: "https://i.ibb.co/VpmZZKq/imagem.jpg",
+  testimonialHelen: "https://i.ibb.co/sd9w8QWj/1-DEPOIMENTO.webp",
+  testimonialRuth: "https://i.ibb.co/TqPrr9rg/2fc1e47b2931f00666611ff2960c9c3f.jpg",
+  testimonialDiane: "https://i.ibb.co/NgBbNN2B/3-DEPOIMENTO.png",
 
   // Autoridade médica
-  draMarina: "https://i.ibb.co/Qv3LpDk/elon.jpg",
+  draMarina: "https://i.ibb.co/W4VVcZky/unnamed-2.png",
 }
 
 const CHECKOUT_URL = "https://pay.hotmart.com/P103120932I?off=r5yaffdw"
