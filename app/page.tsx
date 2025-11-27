@@ -16,7 +16,7 @@ const IMAGES = {
   // Formato correto: https://i.ibb.co/CODIGO/arquivo.jpg
   
   // SUAS 2 IMAGENS (obtenha os links diretos corretos):
-  heroMainImage: "https://i.ibb.co/VpmZZKq/imagem.jpg", // ← CORRIJA: Cole o link DIRETO aqui
+  heroMainImage: "hhttps://ibb.co/VpmZZKqd", // ← CORRIJA: Cole o link DIRETO aqui
   elonMuskPhoto: "https://i.ibb.co/Qv3LpDk/elon.jpg",   // ← CORRIJA: Cole o link DIRETO aqui
   
   // Todas as outras imagens usarão as mesmas 2 acima (você pediu para repetir):
