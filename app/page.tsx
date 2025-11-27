@@ -28,7 +28,7 @@ const IMAGES = {
   pesquisaNasaDensidadeOssea: "https://i.ibb.co/v4DhG8Jr/75ec9d11fde58bba5436049d0b807a-1764218063334.jpg",
 
   // Seção: Se você ainda não está acamada
-  raioXOssoSaudavel: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
+  raioXOssoSaudavel: "https://i.ibb.co/CpswnrYz/unnamed.png",
 
   // Seção: O protocolo revolucionário
   protocoloAntiCelulasZumbis: "https://i.ibb.co/Qv3LpDk/elon.jpg",
