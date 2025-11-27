@@ -17,7 +17,7 @@ const IMAGES = {
   
   // SUAS 2 IMAGENS (obtenha os links diretos corretos):
   heroMainImage: "https://i.ibb.co/x8H0047y/5c4fa786e4bf6b95eae2720de5a6f7-1764217967139.png", // ← CORRIJA: Cole o link DIRETO aqui
-  elonMuskPhoto: "https://i.ibb.co/Qv3LpDk/elon.jpg",   // ← CORRIJA: Cole o link DIRETO aqui
+  elonMuskPhoto: "https://i.ibb.co/x8H0047y/5c4fa786e4bf6b95eae2720de5a6f7-1764217967139.png",   // ← CORRIJA: Cole o link DIRETO aqui
   
   // Todas as outras imagens usarão as mesmas 2 acima (você pediu para repetir):
   zombieCellsIllustration: "https://i.ibb.co/VpmZZKq/imagem.jpg", // ← Repetindo imagem 1
