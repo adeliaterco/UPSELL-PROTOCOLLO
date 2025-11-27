@@ -306,9 +306,6 @@ export default function ProtocoloAntiCelulasZumbis() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
               />
             </div>
-            <figcaption className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 italic px-2 sm:px-0">
-              Células senescentes (em vermelho) liberam substâncias inflamatórias que destroem ossos e cartilagens. Ilustração: Pesquisa NASA
-            </figcaption>
           </figure>
 
           <div className="bg-red-50 rounded-lg p-6 sm:p-8 my-6 sm:my-8">
