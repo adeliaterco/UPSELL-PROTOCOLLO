@@ -25,7 +25,7 @@ const IMAGES = {
   celulasSenescentes: "https://i.ibb.co/MkQZ8Z1R/94ee6615abe3b5144ee00558e3764e-1764218058684.png",
 
   // Seção: Por que os tratamentos "padrão" não apenas falham
-  pesquisaNasaDensidadeOssea: "https://i.ibb.co/MkQZ8Z1R/94ee6615abe3b5144ee00558e3764e-1764218058684.png",
+  pesquisaNasaDensidadeOssea: "https://i.ibb.co/v4DhG8Jr/75ec9d11fde58bba5436049d0b807a-1764218063334.jpg",
 
   // Seção: Se você ainda não está acamada
   raioXOssoSaudavel: "https://i.ibb.co/v2PrSm9/1cfb8ad7a3e4dae6f664e94f2e533d-1764218053701.jpg",
