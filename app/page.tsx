@@ -114,21 +114,6 @@ export default function ProtocoloAntiCelulasZumbis() {
           Descoberta revolucionária ligada à NASA revela como "células zumbis" destroem ossos e articulações — e como eliminá-las naturalmente
         </p>
 
-        {/* METADADOS DO ARTIGO */}
-        <div className="flex items-center text-sm text-gray-500 mb-8 pb-8 border-b border-gray-200">
-          <div className="flex items-center mr-6">
-            <div className="w-10 h-10 bg-gray-300 rounded-full mr-3"></div>
-            <div>
-              <p className="font-semibold text-gray-700">Redação Saúde & Ciência</p>
-              <p className="text-xs">Investigação Especial</p>
-            </div>
-          </div>
-          <div className="flex items-center">
-            <Clock className="w-4 h-4 mr-1" />
-            <span>Leitura: 12 min</span>
-          </div>
-        </div>
-
         {/* IMAGEM HERO */}
         <figure className="mb-10">
           <div className="relative w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden bg-gray-200">
